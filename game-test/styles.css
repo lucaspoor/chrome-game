@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+#game{
+    width: 500px;
+    border: 2px solid black;
+    height: 200px;
+}
+@keyframes character{
+0%{top: 73px;}
+30%{top:23px;}
+70%{top: 23px;}
+100%{top: 73px;}
+
+
+}
+#character{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border:2px solid violet;
+    position: relative;
+    top: 73px;
+    right:211px;
+    
+}
+
+.animate#character {
+    animation-name: character ;
+    animation-duration: 420ms;
+}
+
+@keyframes block{
+  from {left:211px;}
+  to {left:-272px;}
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+    border:2px solid green;
+    position: relative;
+    top: 88px;
+    left: 211px;
+    animation-name: block ;
+    animation-duration: 750ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+}
