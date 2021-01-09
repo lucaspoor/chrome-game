@@ -20,6 +20,7 @@ var checkDead = setInterval(function (){
 
         block.style.animation = "none";
         alert("you lose!!!")
+        location.reload()
     }
 },10)
 
